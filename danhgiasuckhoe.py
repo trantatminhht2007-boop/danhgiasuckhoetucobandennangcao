@@ -1,7 +1,7 @@
 import streamlit as st
 
 def basic_health_assessment():
-    st.header("🔍 Đánh giá sức khỏe cơ bản")
+    st.header("🔍 Đánh giá sức khỏe cơ bản cho người trên 18 tuổi")
     scores = 0
 
     with st.expander("🛌 Thói quen sinh hoạt"):
@@ -138,4 +138,5 @@ if st.checkbox("👉 Thực hiện đánh giá nâng cao"):
     elif 30 <= total_score < 50:
         st.error("😟 Sức khỏe kém.")
     else:
+
         st.error("🚨 Bạn nên đi khám bác sĩ ngay!")
