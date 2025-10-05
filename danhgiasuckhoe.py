@@ -164,11 +164,11 @@ with tab1:
     meal_per_day = st.number_input("Số bữa ăn trong ngày", 1.0, 10.0, 3.0)
     huyet_ap = st.text_input("Huyết áp (ví dụ: 120/80)", "120/80")
     duong_huyet = st.number_input("Đường huyết (mg/dL)", 50.0, 300.0, 90.0)
-    mo_mau = st.radio("Tình trạng mỡ máu", ["1", "2", "3"])
-    tinh_trang_dinh_duong = st.radio("Tình trạng Dinh dưỡng", ["1", "2", "3", "4"])
-    suc_khoe_co_bap = st.radio("Sức khỏe Cơ bắp", ["1", "2", "3"])
-    hieu_suat = st.radio("Hiệu suất Học tập/Làm việc", ["1", "2", "3"])
-    giai_tri = st.radio("Khả năng Giải trí", ["1", "2", "3"])
+    mo_mau = st.radio("Tình trạng mỡ máu", ["1:Tốt", "2:Bình Thường", "3: Tệ"])
+    tinh_trang_dinh_duong = st.radio("Tình trạng Dinh dưỡng", ["1:Tốt", "2:Bình Thường", "3: Tệ"])
+    suc_khoe_co_bap = st.radio("Sức khỏe Cơ bắp", ["1:Tốt", "2:Bình Thường", "3: Tệ"])
+    hieu_suat = st.radio("Hiệu suất Học tập/Làm việc", ["1:Tốt", "2:Bình Thường", "3: Tệ"])
+    giai_tri = st.radio("Khả năng Giải trí", ["1:Tốt", "2:Bình Thường", "3: Tệ"])
 
     if st.button("Đánh giá Cơ bản"):
         basic_score, BMI, CICO = basic_health_assessment(
