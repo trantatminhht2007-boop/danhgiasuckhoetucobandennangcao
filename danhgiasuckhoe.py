@@ -1,7 +1,7 @@
 import streamlit as st
 
 def basic_health_assessment():
-    st.header("🔍 Đánh giá sức khỏe cơ bản cho người trên 18 tuổi")
+    st.header("🔍 Đánh giá sức khỏe cơ bản ")
     scores = 0
 
     with st.expander("🛌 Thói quen sinh hoạt"):
@@ -84,7 +84,7 @@ def basic_health_assessment():
 
 
 def advanced_health_assessment():
-    st.header("📈 Đánh giá sức khỏe nâng cao")
+    st.header("📈 Đánh giá sức khỏe nâng cao cho người trên 18 tuổi")
     age = st.number_input("Tuổi", min_value=0)
     gender = st.selectbox("Giới tính", ["Nam", "Nữ"])
     criteria = []
@@ -140,3 +140,4 @@ if st.checkbox("👉 Thực hiện đánh giá nâng cao"):
     else:
 
         st.error("🚨 Bạn nên đi khám bác sĩ ngay!")
+
