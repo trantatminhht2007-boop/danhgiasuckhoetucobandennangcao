@@ -148,7 +148,7 @@ def advanced_health_assessment():
 
 # ================== GIAO DIỆN STREAMLIT ==================
 st.set_page_config(page_title="Ứng dụng Đánh giá Sức khỏe", layout="wide")
-st.title("🩺 Ứng dụng Đánh giá Sức khỏe Toàn diện (Theo thang điểm) ")
+st.title("🩺 Ứng dụng Đánh giá Sức khỏe Toàn diện")
 
 tab1, tab2 = st.tabs(["Đánh giá Cơ bản", "Đánh giá Nâng cao"])
 
