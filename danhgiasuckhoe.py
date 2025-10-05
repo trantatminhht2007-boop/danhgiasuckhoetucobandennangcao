@@ -99,7 +99,7 @@ def child_health_assessment(age):
 
     total = 0
     for c in criteria:
-        score = st.slider(f"Đánh giá '{c}'", 1, 10, 5)
+        score = st.slider(f"Đánh giá '{c}'", 0, 10, 5)
         total += score
     return total / len(criteria)
 
@@ -131,7 +131,7 @@ def adult_health_assessment(age, gender):
 
     total = 0
     for c in criteria:
-        score = st.slider(f"Đánh giá '{c}'", 1, 10, 5)
+        score = st.slider(f"Đánh giá '{c}'", 0, 10, 5)
         total += score
     return total / len(criteria)
 
@@ -148,7 +148,7 @@ def advanced_health_assessment():
 
 # ================== GIAO DIỆN STREAMLIT ==================
 st.set_page_config(page_title="Ứng dụng Đánh giá Sức khỏe", layout="wide")
-st.title("🩺 Ứng dụng Đánh giá Sức khỏe Toàn diện")
+st.title("🩺 Ứng dụng Đánh giá Sức khỏe Toàn diện (Theo thang điểm) ")
 
 tab1, tab2 = st.tabs(["Đánh giá Cơ bản", "Đánh giá Nâng cao"])
 
