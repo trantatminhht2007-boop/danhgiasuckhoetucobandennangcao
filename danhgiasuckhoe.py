@@ -57,7 +57,7 @@ def basic_health_assessment():
         tam_thu, tam_truong = map(int, huyet_ap.split("/"))
         if tam_thu < 120 and tam_truong < 80:
             basic_scores += 7
-        elif 120 <= tam_thu < 130 and tam_truong < 80:
+        elif 120 <= tam_thu < 130 and 60 <= tam_truong <= 80:
             basic_scores += 5
         elif 130 <= tam_thu <= 139 or 80 <= tam_truong <= 89:
             basic_scores += 3
